@@ -20,16 +20,14 @@ done
 find . -type f -iname "*.zip" -delete 
 
 
-
+#This block will create a text file which will containt all the PASS/FAIL results from fastqc analysis and delete the source directory
 touch fastqc_summaries.txt
-for folder in */
+for dir in */;
 do
-cd $folder
-cat summary.txt > ../fastqc_summaries.txt
-cd ..
+cat ./$dir/summary.txt >> ./fastqc_summaries.txt
+rm -rf ./$dir
 done
 
-
-
+#NEXT STEP, print some sort of analysis count TRUE/FAILS etc.
 
 
