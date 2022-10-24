@@ -283,9 +283,15 @@ mkdir $destination/ICA1/Step6
 mv *mean_expr.txt $destination/ICA1/Step6
 cd $destination/ICA1/Step6
 
+echo "! Mean Averages of the counts per gene calculated! Correspodning files created!" 
+echo "You can find them in: "$destination"/ICA1/Step6" 
+echo ""
+echo "Unfortunately, the script was not finished before the deadline :("
+echo ""
+
 #Step 6
 
-
+#Unfortunately, I did not anticipate that part 5 will take me so long. For that reason I did not have time to code the last part of the script
 
 
 
